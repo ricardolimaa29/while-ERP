@@ -10,6 +10,7 @@ janela.geometry("760x450")#Tamanho do app
 janela.resizable(False, False)#Congelando a tela do App
 janela.title("ERP AUT v2.0")#titulo do app v1.0
 ctk.set_appearance_mode("light")#tema padrão do app
+janela.iconbitmap('icon.ico')
 
 #Fontes utilizadas no App
 Font_tuple = ("Microsoft YaHei UI Light", 12, "bold")
@@ -26,74 +27,148 @@ def entrar():
     box4 = selectBox4.get()
     box5 = selectBox5.get()
     box6 = selectBox6.get()
-    print(box1)
-    print(box2)
-    print(box3)
-    if box1 == 'Selecione uma Base' or box2 =='Selecione uma Base' or box3 =='Selecione uma Base':
-        aut.alert(text='Você nao selecionou uma Base', title='ERR0R', button='OK')
-    
-    else:
-                #                                               Abrir o Corporate
-        os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
-        time.sleep(6)
+    while True:
+        if senha == "":
+            aut.alert(text=' Você não inserio uma senha para começar :( ', title='Insira uma senha', button='Tentar novamente')
+            break
+        if box1 == "Selecione uma Base":
+            pass
+        else:
+            
+                    #                                               Abrir o Corporate
+            os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+            time.sleep(6)
 
 
-                        #                                               colocar a senha
+                            #                                               colocar a senha
 
-        time.sleep(1)
-        aut.write (senha)
-                        #                                               mudar a matriz desejada
-        aut.press('Tab')
-        aut.write(box1)
-        time.sleep(1)
-        aut.press('Enter')
-                        #                                               entrar
-        aut.press('Enter')
-        time.sleep(20)
-                        #                                             LOOP1
+            time.sleep(1)
+            aut.write (senha)
+                            #                                               mudar a matriz desejada
+            aut.press('Tab')
+            aut.write(box1)
+            time.sleep(1)
+            aut.press('Enter')
+                            #                                               entrar
+            aut.press('Enter')
+            time.sleep(15)
+        if box2 == "Selecione uma Base":
+            pass
+        else:
+                            #                                             LOOP1
 
-                        #                                               Abrir o Corporate
-        os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
-        time.sleep(6)
-
-
-                        #                                               colocar a senha
-
-        time.sleep(1)
-        aut.write(senha)
-                        #                                               mudar a matriz desejada
-        aut.press('Tab')
-        aut.write(box2)
-        time.sleep(1)
-        aut.press('Enter')
-                        #                                               entrar
-        aut.press('Enter')
-        time.sleep(20)
-                        #                                              LOOP2
-                        #                                               Abrir o Corporate
-        os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
-        time.sleep(6)
+                            #                                               Abrir o Corporate
+            os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+            time.sleep(6)
 
 
-                        #                                               colocar a senha
+                            #                                               colocar a senha
 
-        time.sleep(1)
-        aut.write(senha)
-                        #                                               mudar a matriz desejada
-        aut.press('Tab')
-        aut.write(box3)
-        time.sleep(1)
-        aut.press('Enter')
-                        #                                               entrar
-        aut.press('Enter')
-        time.sleep(20)
-                        #                                              LOOP3
-                        #                                               Abrir o Corporate
- 
+            time.sleep(1)
+            aut.write(senha)
+                            #                                               mudar a matriz desejada
+            aut.press('Tab')
+            aut.write(box2)
+            time.sleep(1)
+            aut.press('Enter')
+                            #                                               entrar
+            aut.press('Enter')
+            time.sleep(15)
+        if box3 == "Selecione uma Base":
+            pass
+        else:
+                             #                                              LOOP2
+                            #                                               Abrir o Corporate
+            os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+            time.sleep(6)
 
 
+                            #                                               colocar a senha
+
+            time.sleep(1)
+            aut.write(senha)
+                            #                                               mudar a matriz desejada
+            aut.press('Tab')
+            aut.write(box3)
+            time.sleep(1)
+            aut.press('Enter')
+                            #                                               entrar
+            aut.press('Enter')
+            time.sleep(15)
+        if box4 == "Selecione uma Base":
+            pass
+        else:
+            
+                            #                                              LOOP3
+                            #                                               Abrir o Corporate
+            
+                            #                                             LOOP4
+
+                            #                                               Abrir o Corporate
+            os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+            time.sleep(6)
 
 
+                            #                                               colocar a senha
+
+            time.sleep(1)
+            aut.write(senha)
+                            #                                               mudar a matriz desejada
+            aut.press('Tab')
+            aut.write(box4)
+            time.sleep(1)
+            aut.press('Enter')
+                            #                                               entrar
+            aut.press('Enter')
+            time.sleep(15)
+
+        if box5 == "Selecione uma Base":
+            pass
+        else:
+             
+                            #                                             LOOP5
+
+                            #                                               Abrir o Corporate
+            os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+            time.sleep(6)
+
+
+                            #                                               colocar a senha
+
+            time.sleep(1)
+            aut.write(senha)
+                            #                                               mudar a matriz desejada
+            aut.press('Tab')
+            aut.write(box5)
+            time.sleep(1)
+            aut.press('Enter')
+                            #                                               entrar
+            aut.press('Enter')
+            time.sleep(15)
+
+        if box6 == "Selecione uma Base":
+            pass
+        else:
+                          #                                             LOOP6
+
+                            #                                               Abrir o Corporate
+            os.startfile('K:\Div\CorporateUpdater\JBS.Updater.Corporate.exe')
+            time.sleep(6)
+
+
+                            #                                               colocar a senha
+
+            time.sleep(1)
+            aut.write(senha)
+                            #                                               mudar a matriz desejada
+            aut.press('Tab')
+            aut.write(box6)
+            time.sleep(1)
+            aut.press('Enter')
+                            #                                               entrar
+            aut.press('Enter')
+            time.sleep(15)      
+        break   
 
 #Imagem da logo Corporate
 img = (Image.open("logo.png"))
@@ -207,5 +282,10 @@ label3 = ctk.CTkLabel(janela,text="@AUTOR: Ricardo Rodrigues Lima")
 label3.pack()
 label3.place(x=260,y=425)
 label3.configure(font=font_autor)
+
+# label3 = ctk.CTkLabel(janela,text="")
+# label3.pack()
+# label3.place(x=360,y=350)
+# label3.configure(font=font_autor)
 
 janela.mainloop()
